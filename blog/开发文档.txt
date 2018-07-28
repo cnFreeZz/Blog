@@ -1,0 +1,34 @@
+用户发送http请求 -> url -> 解析路由  -> 找到匹配的规则 -> 执行绑定函数，返回对应的内容至客户端
+/public ->  静态文件 -> 直接读取指定目录下的文件，返回给用户
+-> 动态 -> 处理业务逻辑，加载模块，解析模板  -> 返回数据给用户
+
+
+main模块： /  首页 
+	   /view 内容页
+api模块：
+	   / 首页 ；/register 用户注册； /login  用户登录 ； /conmment 评论获取 ；/comment/post 评论提交；
+
+admin:  / 首页
+
+	用户管理： /user 用户列表
+
+	分类管理： /category        分类列表
+		   /category/add    分类添加
+		   /category/edit   分类修改	
+	 	   /category/delete 分类删除
+	
+	文章内容管理：  /article 内容列表
+			/article/add  内容添加
+			/article/edit 内容修改
+			/article/delete 内容删除
+	评论内容管理    /comment  评论列表
+			/comment/delete 评论删除
+
+功能开发顺序：用户 栏目 内容 评论
+编码顺序： 通过schema定义设计数据存储结构 ——  功能逻辑  ——  页面展示
+
+req.body 获取post提交过来的数据；
+
+.findone 类方法 # 对象方法； findone： 查找一条数据；
+
+limit(Number):限制获取的数据； skip(2):忽略数据条数；

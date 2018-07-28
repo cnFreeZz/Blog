@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+
+<ol class="breadcrumb">
+  <li><a href="/">管理首页</a></li>
+  <li><span>留言列表</span></li>
+</ol>
+
+<h3>留言列表</h3>
+{% include 'page.html' %}
+<table class="table table-hover table-striped">
+  <tr>
+    <th>用户名</th>
+    <th>时间</th>
+    <th>留言内容</th>
+  </tr>
+  {% for comments in content %}
+  <tr>
+    <td>{{content.comments.username}}</td>
+    <td>{{content.conments.postTime}}</td>
+    <td>{{comtent.comments.content}}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% include 'page.html' %}
+
+{% endblock %}
