@@ -1,18 +1,10 @@
-# blog2
-
-课程学习网址： http://study.163.com/course/courseMain.htm?courseId=1003675016
-
-主要代码都是照着课程敲的，布局这里课程没有展现，用bootstrap自己实现的，有在学习这个课程的小伙伴可以拿去参考。
-
+# blog
 数据库连接方式：
 
 ``` stylus
-mongod --dbpath=C:\Users\cshenger\Desktop\blog2\db --port=27019
+mongod --dbpath=C:\Users\Administrator\Desktop\blog2-master\db
 ```
-
-其他都是按照正常开发node的步骤，这里不再赘述，数据库就不上传了。
-
-样图：
+图：
 
 ![enter description here][1]
 
